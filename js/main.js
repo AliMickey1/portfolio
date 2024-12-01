@@ -97,6 +97,7 @@
 
 
 //Likes and Views part 2	
+/*
 const heartIcon = document.querySelector(".like-button .heart-icon");
 const likesAmountLabel = document.querySelector(".like-button .likes-amount");
 
@@ -112,7 +113,7 @@ heartIcon.addEventListener("click", () => {
 
   likesAmountLabel.innerHTML = likesAmount;
 });
-	
+	*/
 	
 	var burgerMenu = function() {
 
