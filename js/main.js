@@ -328,6 +328,7 @@ heartIcon.addEventListener("click", () => {
 }());
 
 //let likes = 0;
+/*
 let liked = false;
 
 function toggleLike() {
@@ -342,7 +343,7 @@ function updateViewCount() {
     localStorage.setItem('viewCount', viewCount);
     document.getElementById('viewCount').textContent = viewCount;
 }
-
+*/
 
 function swapImages() {
   var group1 = document.getElementById('graphic');
@@ -379,6 +380,7 @@ function swapImages() {
 
 
 //Likes and views
+/*
 let likes = 0;
 let views = 0;
 
@@ -391,7 +393,7 @@ window.addEventListener('load', function() {
     views++;
     document.getElementById('viewCount').innerText = `Views: ${views}`;
 });
-
+*/
 
 
 const track = document.querySelector('.carousel-track');
