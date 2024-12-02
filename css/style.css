@@ -874,7 +874,8 @@ body.offcanvas .colorlib-nav-toggle {
 .colorlib-blog,
 .colorlib-work,
 .colorlib-about,
-.colorlib-services
+.colorlib-services,
+.colorlib-contact
 {
   padding-top: 4em;
   padding-bottom: 9em;
@@ -889,18 +890,8 @@ body.offcanvas .colorlib-nav-toggle {
   /*box-shadow: 3px 3px blue, -1em 0 .4em black;*/
   box-shadow: 12px 12px 2px 1px #9d9d9d;
   border: 4px grey solid;
-  
-  
 }
-.colorlib-contact {
-  padding-top: 4em;
-  padding-bottom: 9em;
-  /*margin-left: 20em;*/
-  clear: both;
-  width: 100%;
-  display: block;
-  /*border: red solid 5px;*/
-}
+
 @media screen and (max-width: 768px) {
   .colorlib-experience,
   .colorlib-skills,
