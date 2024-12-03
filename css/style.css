@@ -37,6 +37,9 @@
 *	
 *
 * ======================================================= */
+/* styles.css */
+
+
 body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
@@ -526,6 +529,89 @@ figure figcaption {
   
 }
 
+@media screen and (max-width: 768px) {
+  #Apps {
+    font-size: 6px;
+    margin: 0 0 2em 0;
+    padding: 0;
+
+  }
+
+  #Apps .icons{
+    position: relative;
+    margin: 0 0 2em 0;
+    font-size: 6px;
+    width: 100%;
+    padding: 0;
+    /* border: red solid 3px; */
+    
+  }
+
+  #Apps .icons .canva img, 
+  #Apps .icons .adobe img,
+  #Apps .icons .adobeexp img,
+  #Apps .icons .clever img,
+  #Apps .icons .disc-ed img,
+  #Apps .icons .lucid img,
+  #Apps .icons .lumio img,
+  #Apps .icons .office img,
+  #Apps .icons .minecraft img,
+  #Apps .icons .seesaw img,
+  #Apps .icons .padlet img,
+  #Apps .icons .seesaw img,
+  #Apps .icons .wixie img {
+    /* height: 30px; */
+    width: 1px;
+    object-fit: contain;
+    transition: transform 0.2s;
+    padding: 0;
+    display: none;
+  }
+
+  #Apps .icons .canva,
+  #Apps .icons .bc,
+  #Apps .icons .adobe,
+  #Apps .icons .adobeexp,
+  #Apps .icons .clever,
+  #Apps .icons .disc-ed,
+  #Apps .icons .lucid,
+  #Apps .icons .lumio,
+  #Apps .icons .office,
+  #Apps .icons .minecraft,
+  #Apps .icons .nearpod,
+  #Apps .icons .padlet,
+  #Apps .icons .seesaw,
+  #Apps .icons .wixie {
+    /* border: black solid 1px; */
+    /* border: green solid 3px; */
+    /* width: 100%; */
+    padding: 0px;
+    transition: transform 0.2s;
+    height: 20px;
+    /* flex-wrap: wrap; */ */
+  }
+
+  #Apps .icons .nearpod img,
+  #Apps .icons .bc img
+ {
+  width: 8px;
+  transition: transform 0.2s;
+  display: none;
+
+  }
+
+  #Apps .icons h3 {
+    /* border: yellow solid 3px; */
+    font-size: 25px;
+  }
+
+  #Apps h1 {
+    /* border: yellow solid 3px; */
+    font-size: 25px;
+  }
+
+}
+
 .colorlib-work h1{
   font-family: "Fredoka", serif;
   
@@ -891,6 +977,16 @@ body.offcanvas .colorlib-nav-toggle {
 .colorlib-services,
 .colorlib-contact
 {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; 
+  text-align: center; 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center center;
+
   padding-top: 4em;
   padding-bottom: 9em;
   margin-top: 1em;
@@ -906,6 +1002,31 @@ body.offcanvas .colorlib-nav-toggle {
   border: 4px grey solid;
 }
 
+.colorlib-contact {
+  margin-left: 300px;
+}
+
+@media (max-width: 768px) {
+  .colorlib-contact {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-left: 1em;
+      margin-right: 0em;
+      text-align: center;
+      width: 100%;
+      margin: 0 0 2em 0;
+ 
+  }
+
+  .colorlib-narrow-content2 .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    padding: 30px;
+  }
+  
+}
+
 @media screen and (max-width: 768px) {
   .colorlib-experience,
   .colorlib-skills,
@@ -915,10 +1036,21 @@ body.offcanvas .colorlib-nav-toggle {
   .colorlib-about,
   .colorlib-services,
   .colorlib-contact {
-    padding-top: 5em;
-    padding-bottom: 8em;
+    /* box-shadow: 12px 12px 2px 1px #9d9d9d; */
+
+    background-size: contain;
+    }
+
+  .colorlib-work .col-md-6 {
+    flex: 0 0 100%; 
+    max-width: 100%;
+    /* background-color: transparent; */
+
   }
 }
+
+
+/* } */
 
 .author-img {
   background-size: cover;
@@ -2283,6 +2415,141 @@ body.offcanvas .colorlib-nav-toggle {
 .view-container {
   display: flex;
   align-items: center;
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
   font-size: 1.2em;
 }
+
+
+
+
+/* body { */
+  /* font-family: Arial, sans-serif; */
+  /* margin: 0;
+  padding: 0;
+} */
+
+/* .colorlib-narrow-content {
+  padding: 20px;
+} */
+
+/* .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 15px;
+}
+
+.col-md-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 15px;
+} */
+
+/* @media (max-width: 768px) {
+  .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+} */
+
+/* .project {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+} */
+
+/* @media (max-width: 768px) {
+  .colorlib-contact {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+} */
+
+/* .desc {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  color: white;
+  padding: 10px;
+} */
+
+/* styles.css */
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.colorlib-narrow-content2 {
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-md-5, .col-md-7, .col-md-6, .col-md-12 {
+  padding: 15px;
+}
+
+.col-md-5 {
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+
+.col-md-7 {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-md-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+} */
+
+
+
+/* .colorlib-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.colorlib-icon i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.colorlib-text p {
+  margin: 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.btn-send-message {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-send-message:hover {
+  background-color: #0056b3;
+} */
