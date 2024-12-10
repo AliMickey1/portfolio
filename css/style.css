@@ -38,6 +38,61 @@
 *
 * ======================================================= */
 /* styles.css */
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.colorlib-narrow-content {
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  /* background-color: white; */
+}
+
+.col-md-6, .col-md-12 {
+  padding: 15px;
+}
+
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-md-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+
+.project {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+}
+
+/* .desc {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  color: white;
+  padding: 10px;
+  margin-top: 0;
+} */
 
 
 body {
@@ -531,10 +586,9 @@ figure figcaption {
 
 @media screen and (max-width: 768px) {
   #Apps {
-    font-size: 6px;
+    font-size: 0.5em;
     margin: 0 0 2em 0;
     padding: 0;
-
   }
 
   #Apps .icons{
@@ -543,8 +597,8 @@ figure figcaption {
     font-size: 6px;
     width: 100%;
     padding: 0;
-    /* border: red solid 3px; */
-    
+    max-width: 100%; 
+    max-height: 100%;
   }
 
   #Apps .icons .canva img, 
@@ -560,12 +614,12 @@ figure figcaption {
   #Apps .icons .padlet img,
   #Apps .icons .seesaw img,
   #Apps .icons .wixie img {
-    /* height: 30px; */
-    width: 1px;
+    width: 0.1em;
     object-fit: contain;
     transition: transform 0.2s;
     padding: 0;
-    display: none;
+    max-width: 100%; 
+    max-height: 100%;
   }
 
   #Apps .icons .canva,
@@ -582,32 +636,32 @@ figure figcaption {
   #Apps .icons .padlet,
   #Apps .icons .seesaw,
   #Apps .icons .wixie {
-    /* border: black solid 1px; */
-    /* border: green solid 3px; */
-    /* width: 100%; */
     padding: 0px;
     transition: transform 0.2s;
     height: 20px;
-    /* flex-wrap: wrap; */ */
+    width: 1em;
+    display: flex;
+    border: none;
   }
 
   #Apps .icons .nearpod img,
   #Apps .icons .bc img
  {
-  width: 8px;
+  /* width: 0.1em; */
+  object-fit: contain;
   transition: transform 0.2s;
-  display: none;
+  padding: 0;
+  max-width: 100%; 
+  max-height: 100%;
 
   }
 
   #Apps .icons h3 {
-    /* border: yellow solid 3px; */
     font-size: 25px;
   }
 
   #Apps h1 {
-    /* border: yellow solid 3px; */
-    font-size: 25px;
+    font-size: 2em;
   }
 
 }
@@ -634,7 +688,7 @@ figure figcaption {
 #Apps .icons .wixie
 {
   /*height: 10px;*/
-    border: black solid 1px;
+  border: black solid 0.1px;
   width: 50%;
   padding: 20px;
   transition: transform 0.2s;
@@ -679,8 +733,7 @@ figure figcaption {
   width: 40px;
   height: auto;
   transition: transform 0.2s;
-  /*align-content: center;*/
-  /*justify-content: center;*/
+
 }
 
 .linkedin-logo:hover {
@@ -987,20 +1040,41 @@ body.offcanvas .colorlib-nav-toggle {
   background-repeat: no-repeat; 
   background-position: center center;
 
+ padding-top: 4em;
+  padding-bottom: 9em;
+  margin-top: 1em;
+  clear: both;
+  width: 100%;
+  display: block;
+  box-shadow: 12px 12px 2px 1px #9d9d9d;
+  border: 4px grey solid; 
+}
+
+.colorlib-work .colorlib-narrow-content .row #webDesign .col-md-6 animate-box{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; 
+  text-align: center; 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center center;
   padding-top: 4em;
   padding-bottom: 9em;
   margin-top: 1em;
   clear: both;
   width: 100%;
   display: block;
-  /*background: linear-gradient(to bottom, #99CCFF, #f0f0f0);*/
-  /*background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);*/
-  /*background: radial-gradient(circle, #cfd8dc, #feb47b);*/
-  /*box-shadow: 10px 5px 5px teal;*/
-  /*box-shadow: 3px 3px blue, -1em 0 .4em black;*/
   box-shadow: 12px 12px 2px 1px #9d9d9d;
   border: 4px grey solid;
+  
 }
+
+/* .colorlib-work {
+  border: yellow solid 3px;
+
+} */
 
 .colorlib-contact {
   margin-left: 300px;
@@ -1041,11 +1115,47 @@ body.offcanvas .colorlib-nav-toggle {
     background-size: contain;
     }
 
-  .colorlib-work .col-md-6 {
+    /* .colorlib-work {
+      flex: 0 0 100%; 
+      max-width: 100%;
+      border: yellow solid 3px;
+    } */
+
+  .colorlib-work .colorlib-narrow-content .row .col-md-6 img {
     flex: 0 0 100%; 
     max-width: 100%;
+    
+    /* border: red solid 3px; */
+    flex: 0 0 100%; 
+
+    position: relative;
+    margin: 0 0 2em 0;
+    font-size: 6px;
+    width: 100%;
+    padding: 0;
+    max-width: 100%; 
+    max-height: 100%;
     /* background-color: transparent; */
 
+  }
+
+  #webDesign {
+    flex: 0 0 100%; 
+    max-width: 100%;
+    /* border: yellow solid 3px; */
+    
+  }
+
+  #webDesign img{
+    flex: 0 0 100%; 
+
+    position: relative;
+    margin: 0 0 2em 0;
+    font-size: 6px;
+    width: 100%;
+    padding: 0;
+    max-width: 100%; 
+    max-height: 100%;
   }
 }
 
