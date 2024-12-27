@@ -1056,7 +1056,7 @@ body.offcanvas .colorlib-nav-toggle {
   .colorlib-skills,
   .colorlib-education,
   .colorlib-blog,
-  .colorlib-work,
+  /* .colorlib-work, */
   .colorlib-about,
   .colorlib-services,
   .colorlib-contact {
@@ -1065,30 +1065,42 @@ body.offcanvas .colorlib-nav-toggle {
     background-size: contain;
     }
 
+    /* Show the message only in responsive design mode (mobile view) */
+/* @media only screen and (max-width: 768px) { */
+  .work-samples-message {
+      display: block;
+      text-align: center;
+      margin: 20px;
+      font-size: 18px;
+      font-weight: bold;
+  }
+/* } */
+
     /* .colorlib-work {
       flex: 0 0 100%; 
       max-width: 100%;
       border: yellow solid 3px;
     } */
 
-  .colorlib-work .colorlib-narrow-content .row .col-md-6 img {
-    flex: 0 0 100%; 
-    max-width: 100%;
+  /* .colorlib-work .colorlib-narrow-content .row .col-md-6 {
+    display: none; */
+    /* flex: 0 0 100%; 
+    max-width: 100%; */
     
     /* border: red solid 3px; */
 
     /* background-color: transparent; */
 
-  }
+  /* } */
 
-  #webDesign {
+  /* #webDesign {
     flex: 0 0 100%; 
-    max-width: 100%;
+    max-width: 100%; */
     /* border: yellow solid 3px; */
     
-  }
+  /* } */
 
-  #webDesign img{
+  /* #webDesign img{
     flex: 0 0 100%; 
 
     position: relative;
@@ -1098,7 +1110,8 @@ body.offcanvas .colorlib-nav-toggle {
     padding: 0;
     max-width: 100%; 
     max-height: 100%;
-  }
+  } */
+
 }
 
 
